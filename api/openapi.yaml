@@ -4793,7 +4793,7 @@ components:
             title: sic-code
             type: string
             x-konfig-original-example: "12345"
-            x-konfig-generated-schema: konfig-generated-schema-components-schemas-ClaimsCreateNewClaimRequest-anyOf-18-properties-sic-codes-items
+            x-konfig-generated-schema: konfig-generated-schema-components-schemas-ClaimsCreateNewClaimRequest-anyOf-19-properties-sic-codes-items
           type: array
         international-operations-countries:
           items:
@@ -8139,7 +8139,7 @@ components:
             title: sic-code
             type: string
             x-konfig-original-example: "12345"
-            x-konfig-generated-schema: konfig-generated-schema-components-schemas-ClaimsCreateNewClaimResponse-anyOf-18-properties-sic-codes-items
+            x-konfig-generated-schema: konfig-generated-schema-components-schemas-ClaimsCreateNewClaimResponse-anyOf-19-properties-sic-codes-items
           type: array
         international-operations-countries:
           items:
@@ -11057,6 +11057,7 @@ components:
               - business-email-address
               - client-money-protection-scheme
               - individual-sources-of-funds
+              - nominal-person-with-significant-control
               - hmo-verification
               - business-address
               - employment
@@ -11199,51 +11200,59 @@ components:
       example: https://api.company-information.service.gov.uk/company/00000001/appointments/AbcDEFGhI1JKLmnO2PQ3sTUv4WX
       type: string
       x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-ClaimsCreateNewClaimRequest-anyOf-14-properties-business-address-properties-postal-code
-    : example: NW16XE
-      type: string
-      x-do-not-generate: true
-    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimRequest-anyOf-15-anyOf-0-properties-occupation:
-      example: software-engineer
-      type: string
-      x-do-not-generate: true
-    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimRequest-anyOf-15-anyOf-0-properties-industry-of-occupation:
-      example: information-technology
-      type: string
-      x-do-not-generate: true
-    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimRequest-anyOf-15-anyOf-3-properties-occupation:
-      example: software-engineer
-      type: string
-      x-do-not-generate: true
-    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimRequest-anyOf-15-anyOf-3-properties-industry-of-occupation:
-      example: information-technology
-      type: string
-      x-do-not-generate: true
-    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimRequest-anyOf-16-properties-annual-turnover-properties-currency:
-      example: GBP
-      type: string
-      x-do-not-generate: true
-    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimRequest-anyOf-16-properties-annual-turnover-properties-value:
-      example: "1000.00"
-      type: string
-      x-do-not-generate: true
-    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimRequest-anyOf-18-properties-sic-codes-items:
-      example: "12345"
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-ClaimsCreateNewClaimRequest-anyOf-28-properties-trading-address-properties-postal-code
-    : example: NW16XE
-      type: string
-      x-do-not-generate: true
-    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimRequest-anyOf-30-properties-legal-person-url:
+    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimRequest-anyOf-14-properties-legal-person-url:
       example: /v0/legal-persons/lp.IGxlZ2FsLXBlcnNvbi1pZA
       type: string
       x-do-not-generate: true
-    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimRequest-anyOf-30-properties-companies-house-url:
+    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimRequest-anyOf-14-properties-companies-house-url:
       example: https://api.company-information.service.gov.uk/company/00000001/appointments/AbcDEFGhI1JKLmnO2PQ3sTUv4WX
       type: string
       x-do-not-generate: true
-    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimRequest-anyOf-33-properties-postal-code:
+    ? konfig-generated-schema-components-schemas-ClaimsCreateNewClaimRequest-anyOf-15-properties-business-address-properties-postal-code
+    : example: NW16XE
+      type: string
+      x-do-not-generate: true
+    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimRequest-anyOf-16-anyOf-0-properties-occupation:
+      example: software-engineer
+      type: string
+      x-do-not-generate: true
+    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimRequest-anyOf-16-anyOf-0-properties-industry-of-occupation:
+      example: information-technology
+      type: string
+      x-do-not-generate: true
+    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimRequest-anyOf-16-anyOf-3-properties-occupation:
+      example: software-engineer
+      type: string
+      x-do-not-generate: true
+    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimRequest-anyOf-16-anyOf-3-properties-industry-of-occupation:
+      example: information-technology
+      type: string
+      x-do-not-generate: true
+    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimRequest-anyOf-17-properties-annual-turnover-properties-currency:
+      example: GBP
+      type: string
+      x-do-not-generate: true
+    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimRequest-anyOf-17-properties-annual-turnover-properties-value:
+      example: "1000.00"
+      type: string
+      x-do-not-generate: true
+    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimRequest-anyOf-19-properties-sic-codes-items:
+      example: "12345"
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-ClaimsCreateNewClaimRequest-anyOf-29-properties-trading-address-properties-postal-code
+    : example: NW16XE
+      type: string
+      x-do-not-generate: true
+    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimRequest-anyOf-31-properties-legal-person-url:
+      example: /v0/legal-persons/lp.IGxlZ2FsLXBlcnNvbi1pZA
+      type: string
+      x-do-not-generate: true
+    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimRequest-anyOf-31-properties-companies-house-url:
+      example: https://api.company-information.service.gov.uk/company/00000001/appointments/AbcDEFGhI1JKLmnO2PQ3sTUv4WX
+      type: string
+      x-do-not-generate: true
+    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimRequest-anyOf-34-properties-postal-code:
       example: NW16XE
       type: string
       x-do-not-generate: true
@@ -11347,51 +11356,59 @@ components:
     : example: https://api.company-information.service.gov.uk/company/00000001/appointments/AbcDEFGhI1JKLmnO2PQ3sTUv4WX
       type: string
       x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-14-properties-business-address-properties-postal-code
-    : example: NW16XE
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-15-anyOf-0-properties-occupation
-    : example: software-engineer
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-15-anyOf-0-properties-industry-of-occupation
-    : example: information-technology
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-15-anyOf-3-properties-occupation
-    : example: software-engineer
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-15-anyOf-3-properties-industry-of-occupation
-    : example: information-technology
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-16-properties-annual-turnover-properties-currency
-    : example: GBP
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-16-properties-annual-turnover-properties-value
-    : example: "1000.00"
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-18-properties-sic-codes-items
-    : example: "12345"
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-28-properties-trading-address-properties-postal-code
-    : example: NW16XE
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-30-properties-legal-person-url
+    ? konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-14-properties-legal-person-url
     : example: /v0/legal-persons/lp.IGxlZ2FsLXBlcnNvbi1pZA
       type: string
       x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-30-properties-companies-house-url
+    ? konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-14-properties-companies-house-url
     : example: https://api.company-information.service.gov.uk/company/00000001/appointments/AbcDEFGhI1JKLmnO2PQ3sTUv4WX
       type: string
       x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-33-properties-postal-code
+    ? konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-15-properties-business-address-properties-postal-code
+    : example: NW16XE
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-16-anyOf-0-properties-occupation
+    : example: software-engineer
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-16-anyOf-0-properties-industry-of-occupation
+    : example: information-technology
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-16-anyOf-3-properties-occupation
+    : example: software-engineer
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-16-anyOf-3-properties-industry-of-occupation
+    : example: information-technology
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-17-properties-annual-turnover-properties-currency
+    : example: GBP
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-17-properties-annual-turnover-properties-value
+    : example: "1000.00"
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-19-properties-sic-codes-items
+    : example: "12345"
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-29-properties-trading-address-properties-postal-code
+    : example: NW16XE
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-31-properties-legal-person-url
+    : example: /v0/legal-persons/lp.IGxlZ2FsLXBlcnNvbi1pZA
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-31-properties-companies-house-url
+    : example: https://api.company-information.service.gov.uk/company/00000001/appointments/AbcDEFGhI1JKLmnO2PQ3sTUv4WX
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-34-properties-postal-code
     : example: NW16XE
       type: string
       x-do-not-generate: true
@@ -11435,51 +11452,59 @@ components:
     : example: https://api.company-information.service.gov.uk/company/00000001/appointments/AbcDEFGhI1JKLmnO2PQ3sTUv4WX
       type: string
       x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-14-properties-business-address-properties-postal-code
-    : example: NW16XE
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-15-anyOf-0-properties-occupation
-    : example: software-engineer
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-15-anyOf-0-properties-industry-of-occupation
-    : example: information-technology
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-15-anyOf-3-properties-occupation
-    : example: software-engineer
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-15-anyOf-3-properties-industry-of-occupation
-    : example: information-technology
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-16-properties-annual-turnover-properties-currency
-    : example: GBP
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-16-properties-annual-turnover-properties-value
-    : example: "1000.00"
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-18-properties-sic-codes-items
-    : example: "12345"
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-28-properties-trading-address-properties-postal-code
-    : example: NW16XE
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-30-properties-legal-person-url
+    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-14-properties-legal-person-url
     : example: /v0/legal-persons/lp.IGxlZ2FsLXBlcnNvbi1pZA
       type: string
       x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-30-properties-companies-house-url
+    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-14-properties-companies-house-url
     : example: https://api.company-information.service.gov.uk/company/00000001/appointments/AbcDEFGhI1JKLmnO2PQ3sTUv4WX
       type: string
       x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-33-properties-postal-code
+    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-15-properties-business-address-properties-postal-code
+    : example: NW16XE
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-16-anyOf-0-properties-occupation
+    : example: software-engineer
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-16-anyOf-0-properties-industry-of-occupation
+    : example: information-technology
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-16-anyOf-3-properties-occupation
+    : example: software-engineer
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-16-anyOf-3-properties-industry-of-occupation
+    : example: information-technology
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-17-properties-annual-turnover-properties-currency
+    : example: GBP
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-17-properties-annual-turnover-properties-value
+    : example: "1000.00"
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-19-properties-sic-codes-items
+    : example: "12345"
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-29-properties-trading-address-properties-postal-code
+    : example: NW16XE
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-31-properties-legal-person-url
+    : example: /v0/legal-persons/lp.IGxlZ2FsLXBlcnNvbi1pZA
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-31-properties-companies-house-url
+    : example: https://api.company-information.service.gov.uk/company/00000001/appointments/AbcDEFGhI1JKLmnO2PQ3sTUv4WX
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-34-properties-postal-code
     : example: NW16XE
       type: string
       x-do-not-generate: true
@@ -11543,51 +11568,59 @@ components:
     : example: https://api.company-information.service.gov.uk/company/00000001/appointments/AbcDEFGhI1JKLmnO2PQ3sTUv4WX
       type: string
       x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-14-properties-business-address-properties-postal-code
-    : example: NW16XE
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-15-anyOf-0-properties-occupation
-    : example: software-engineer
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-15-anyOf-0-properties-industry-of-occupation
-    : example: information-technology
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-15-anyOf-3-properties-occupation
-    : example: software-engineer
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-15-anyOf-3-properties-industry-of-occupation
-    : example: information-technology
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-16-properties-annual-turnover-properties-currency
-    : example: GBP
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-16-properties-annual-turnover-properties-value
-    : example: "1000.00"
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-18-properties-sic-codes-items
-    : example: "12345"
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-28-properties-trading-address-properties-postal-code
-    : example: NW16XE
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-30-properties-legal-person-url
+    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-14-properties-legal-person-url
     : example: /v0/legal-persons/lp.IGxlZ2FsLXBlcnNvbi1pZA
       type: string
       x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-30-properties-companies-house-url
+    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-14-properties-companies-house-url
     : example: https://api.company-information.service.gov.uk/company/00000001/appointments/AbcDEFGhI1JKLmnO2PQ3sTUv4WX
       type: string
       x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-33-properties-postal-code
+    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-15-properties-business-address-properties-postal-code
+    : example: NW16XE
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-16-anyOf-0-properties-occupation
+    : example: software-engineer
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-16-anyOf-0-properties-industry-of-occupation
+    : example: information-technology
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-16-anyOf-3-properties-occupation
+    : example: software-engineer
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-16-anyOf-3-properties-industry-of-occupation
+    : example: information-technology
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-17-properties-annual-turnover-properties-currency
+    : example: GBP
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-17-properties-annual-turnover-properties-value
+    : example: "1000.00"
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-19-properties-sic-codes-items
+    : example: "12345"
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-29-properties-trading-address-properties-postal-code
+    : example: NW16XE
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-31-properties-legal-person-url
+    : example: /v0/legal-persons/lp.IGxlZ2FsLXBlcnNvbi1pZA
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-31-properties-companies-house-url
+    : example: https://api.company-information.service.gov.uk/company/00000001/appointments/AbcDEFGhI1JKLmnO2PQ3sTUv4WX
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-34-properties-postal-code
     : example: NW16XE
       type: string
       x-do-not-generate: true
@@ -12407,51 +12440,59 @@ components:
     : example: https://api.company-information.service.gov.uk/company/00000001/appointments/AbcDEFGhI1JKLmnO2PQ3sTUv4WX
       type: string
       x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-ClaimsGetAllClaimsResponse-properties-claims-items-anyOf-14-properties-business-address-properties-postal-code
-    : example: NW16XE
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-ClaimsGetAllClaimsResponse-properties-claims-items-anyOf-15-anyOf-0-properties-occupation
-    : example: software-engineer
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-ClaimsGetAllClaimsResponse-properties-claims-items-anyOf-15-anyOf-0-properties-industry-of-occupation
-    : example: information-technology
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-ClaimsGetAllClaimsResponse-properties-claims-items-anyOf-15-anyOf-3-properties-occupation
-    : example: software-engineer
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-ClaimsGetAllClaimsResponse-properties-claims-items-anyOf-15-anyOf-3-properties-industry-of-occupation
-    : example: information-technology
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-ClaimsGetAllClaimsResponse-properties-claims-items-anyOf-16-properties-annual-turnover-properties-currency
-    : example: GBP
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-ClaimsGetAllClaimsResponse-properties-claims-items-anyOf-16-properties-annual-turnover-properties-value
-    : example: "1000.00"
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-ClaimsGetAllClaimsResponse-properties-claims-items-anyOf-18-properties-sic-codes-items
-    : example: "12345"
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-ClaimsGetAllClaimsResponse-properties-claims-items-anyOf-28-properties-trading-address-properties-postal-code
-    : example: NW16XE
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-ClaimsGetAllClaimsResponse-properties-claims-items-anyOf-30-properties-legal-person-url
+    ? konfig-generated-schema-components-schemas-ClaimsGetAllClaimsResponse-properties-claims-items-anyOf-14-properties-legal-person-url
     : example: /v0/legal-persons/lp.IGxlZ2FsLXBlcnNvbi1pZA
       type: string
       x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-ClaimsGetAllClaimsResponse-properties-claims-items-anyOf-30-properties-companies-house-url
+    ? konfig-generated-schema-components-schemas-ClaimsGetAllClaimsResponse-properties-claims-items-anyOf-14-properties-companies-house-url
     : example: https://api.company-information.service.gov.uk/company/00000001/appointments/AbcDEFGhI1JKLmnO2PQ3sTUv4WX
       type: string
       x-do-not-generate: true
-    konfig-generated-schema-components-schemas-ClaimsGetAllClaimsResponse-properties-claims-items-anyOf-33-properties-postal-code:
+    ? konfig-generated-schema-components-schemas-ClaimsGetAllClaimsResponse-properties-claims-items-anyOf-15-properties-business-address-properties-postal-code
+    : example: NW16XE
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-ClaimsGetAllClaimsResponse-properties-claims-items-anyOf-16-anyOf-0-properties-occupation
+    : example: software-engineer
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-ClaimsGetAllClaimsResponse-properties-claims-items-anyOf-16-anyOf-0-properties-industry-of-occupation
+    : example: information-technology
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-ClaimsGetAllClaimsResponse-properties-claims-items-anyOf-16-anyOf-3-properties-occupation
+    : example: software-engineer
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-ClaimsGetAllClaimsResponse-properties-claims-items-anyOf-16-anyOf-3-properties-industry-of-occupation
+    : example: information-technology
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-ClaimsGetAllClaimsResponse-properties-claims-items-anyOf-17-properties-annual-turnover-properties-currency
+    : example: GBP
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-ClaimsGetAllClaimsResponse-properties-claims-items-anyOf-17-properties-annual-turnover-properties-value
+    : example: "1000.00"
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-ClaimsGetAllClaimsResponse-properties-claims-items-anyOf-19-properties-sic-codes-items
+    : example: "12345"
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-ClaimsGetAllClaimsResponse-properties-claims-items-anyOf-29-properties-trading-address-properties-postal-code
+    : example: NW16XE
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-ClaimsGetAllClaimsResponse-properties-claims-items-anyOf-31-properties-legal-person-url
+    : example: /v0/legal-persons/lp.IGxlZ2FsLXBlcnNvbi1pZA
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-ClaimsGetAllClaimsResponse-properties-claims-items-anyOf-31-properties-companies-house-url
+    : example: https://api.company-information.service.gov.uk/company/00000001/appointments/AbcDEFGhI1JKLmnO2PQ3sTUv4WX
+      type: string
+      x-do-not-generate: true
+    konfig-generated-schema-components-schemas-ClaimsGetAllClaimsResponse-properties-claims-items-anyOf-34-properties-postal-code:
       example: NW16XE
       type: string
       x-do-not-generate: true
@@ -12491,51 +12532,59 @@ components:
       example: https://api.company-information.service.gov.uk/company/00000001/appointments/AbcDEFGhI1JKLmnO2PQ3sTUv4WX
       type: string
       x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-ClaimsCreateNewClaimResponse-anyOf-14-properties-business-address-properties-postal-code
-    : example: NW16XE
-      type: string
-      x-do-not-generate: true
-    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimResponse-anyOf-15-anyOf-0-properties-occupation:
-      example: software-engineer
-      type: string
-      x-do-not-generate: true
-    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimResponse-anyOf-15-anyOf-0-properties-industry-of-occupation:
-      example: information-technology
-      type: string
-      x-do-not-generate: true
-    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimResponse-anyOf-15-anyOf-3-properties-occupation:
-      example: software-engineer
-      type: string
-      x-do-not-generate: true
-    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimResponse-anyOf-15-anyOf-3-properties-industry-of-occupation:
-      example: information-technology
-      type: string
-      x-do-not-generate: true
-    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimResponse-anyOf-16-properties-annual-turnover-properties-currency:
-      example: GBP
-      type: string
-      x-do-not-generate: true
-    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimResponse-anyOf-16-properties-annual-turnover-properties-value:
-      example: "1000.00"
-      type: string
-      x-do-not-generate: true
-    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimResponse-anyOf-18-properties-sic-codes-items:
-      example: "12345"
-      type: string
-      x-do-not-generate: true
-    ? konfig-generated-schema-components-schemas-ClaimsCreateNewClaimResponse-anyOf-28-properties-trading-address-properties-postal-code
-    : example: NW16XE
-      type: string
-      x-do-not-generate: true
-    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimResponse-anyOf-30-properties-legal-person-url:
+    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimResponse-anyOf-14-properties-legal-person-url:
       example: /v0/legal-persons/lp.IGxlZ2FsLXBlcnNvbi1pZA
       type: string
       x-do-not-generate: true
-    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimResponse-anyOf-30-properties-companies-house-url:
+    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimResponse-anyOf-14-properties-companies-house-url:
       example: https://api.company-information.service.gov.uk/company/00000001/appointments/AbcDEFGhI1JKLmnO2PQ3sTUv4WX
       type: string
       x-do-not-generate: true
-    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimResponse-anyOf-33-properties-postal-code:
+    ? konfig-generated-schema-components-schemas-ClaimsCreateNewClaimResponse-anyOf-15-properties-business-address-properties-postal-code
+    : example: NW16XE
+      type: string
+      x-do-not-generate: true
+    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimResponse-anyOf-16-anyOf-0-properties-occupation:
+      example: software-engineer
+      type: string
+      x-do-not-generate: true
+    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimResponse-anyOf-16-anyOf-0-properties-industry-of-occupation:
+      example: information-technology
+      type: string
+      x-do-not-generate: true
+    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimResponse-anyOf-16-anyOf-3-properties-occupation:
+      example: software-engineer
+      type: string
+      x-do-not-generate: true
+    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimResponse-anyOf-16-anyOf-3-properties-industry-of-occupation:
+      example: information-technology
+      type: string
+      x-do-not-generate: true
+    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimResponse-anyOf-17-properties-annual-turnover-properties-currency:
+      example: GBP
+      type: string
+      x-do-not-generate: true
+    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimResponse-anyOf-17-properties-annual-turnover-properties-value:
+      example: "1000.00"
+      type: string
+      x-do-not-generate: true
+    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimResponse-anyOf-19-properties-sic-codes-items:
+      example: "12345"
+      type: string
+      x-do-not-generate: true
+    ? konfig-generated-schema-components-schemas-ClaimsCreateNewClaimResponse-anyOf-29-properties-trading-address-properties-postal-code
+    : example: NW16XE
+      type: string
+      x-do-not-generate: true
+    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimResponse-anyOf-31-properties-legal-person-url:
+      example: /v0/legal-persons/lp.IGxlZ2FsLXBlcnNvbi1pZA
+      type: string
+      x-do-not-generate: true
+    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimResponse-anyOf-31-properties-companies-house-url:
+      example: https://api.company-information.service.gov.uk/company/00000001/appointments/AbcDEFGhI1JKLmnO2PQ3sTUv4WX
+      type: string
+      x-do-not-generate: true
+    konfig-generated-schema-components-schemas-ClaimsCreateNewClaimResponse-anyOf-34-properties-postal-code:
       example: NW16XE
       type: string
       x-do-not-generate: true
@@ -15134,7 +15183,7 @@ components:
                     title: currency code
                     type: string
                     x-konfig-original-example: GBP
-                    x-konfig-generated-schema: konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-16-properties-annual-turnover-properties-currency
+                    x-konfig-generated-schema: konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-17-properties-annual-turnover-properties-currency
                   value:
                     default: "1.00"
                     description: The unsigned value as a decimal-formatted string
@@ -15142,7 +15191,7 @@ components:
                     title: value
                     type: string
                     x-konfig-original-example: "1000.00"
-                    x-konfig-generated-schema: konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-16-properties-annual-turnover-properties-value
+                    x-konfig-generated-schema: konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-17-properties-annual-turnover-properties-value
                 required:
                 - currency
                 - value
@@ -15172,7 +15221,7 @@ components:
                   title: sic-code
                   type: string
                   x-konfig-original-example: "12345"
-                  x-konfig-generated-schema: konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-18-properties-sic-codes-items
+                  x-konfig-generated-schema: konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-19-properties-sic-codes-items
                 type: array
               international-operations-countries:
                 items:
@@ -15551,7 +15600,7 @@ components:
                         title: currency code
                         type: string
                         x-konfig-original-example: GBP
-                        x-konfig-generated-schema: konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-16-properties-annual-turnover-properties-currency
+                        x-konfig-generated-schema: konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-17-properties-annual-turnover-properties-currency
                       value:
                         default: "1.00"
                         description: The unsigned value as a decimal-formatted string
@@ -15559,7 +15608,7 @@ components:
                         title: value
                         type: string
                         x-konfig-original-example: "1000.00"
-                        x-konfig-generated-schema: konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-16-properties-annual-turnover-properties-value
+                        x-konfig-generated-schema: konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-17-properties-annual-turnover-properties-value
                     required:
                     - currency
                     - value
@@ -15589,7 +15638,7 @@ components:
                       title: sic-code
                       type: string
                       x-konfig-original-example: "12345"
-                      x-konfig-generated-schema: konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-18-properties-sic-codes-items
+                      x-konfig-generated-schema: konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-19-properties-sic-codes-items
                     type: array
                   international-operations-countries:
                     items:
@@ -15719,8 +15768,6 @@ components:
                         type: string
                         x-konfig-original-example: https://api.company-information.service.gov.uk/company/00000001/appointments/AbcDEFGhI1JKLmnO2PQ3sTUv4WX
                         x-konfig-generated-schema: konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-subject-association-properties-psc-properties-companies-house-url
-                    required:
-                    - ownership-percent
                     title: psc
                     type: object
                   senior-manager:
@@ -15763,8 +15810,6 @@ components:
                           example: https://api.company-information.service.gov.uk/company/00000001/appointments/AbcDEFGhI1JKLmnO2PQ3sTUv4WX
                           x-konfig-original-example: https://api.company-information.service.gov.uk/company/00000001/appointments/AbcDEFGhI1JKLmnO2PQ3sTUv4WX
                           x-konfig-generated-schema: konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-subject-association-x-allOf-0-properties-psc-properties-companies-house-url
-                      required:
-                      - ownership-percent
                     senior-manager:
                       title: senior-manager
                       type: object
@@ -16009,7 +16054,7 @@ components:
                           title: currency code
                           type: string
                           x-konfig-original-example: GBP
-                          x-konfig-generated-schema: konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-16-properties-annual-turnover-properties-currency
+                          x-konfig-generated-schema: konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-17-properties-annual-turnover-properties-currency
                         value:
                           default: "1.00"
                           description: The unsigned value as a decimal-formatted string
@@ -16017,7 +16062,7 @@ components:
                           title: value
                           type: string
                           x-konfig-original-example: "1000.00"
-                          x-konfig-generated-schema: konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-16-properties-annual-turnover-properties-value
+                          x-konfig-generated-schema: konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-17-properties-annual-turnover-properties-value
                       required:
                       - currency
                       - value
@@ -16047,7 +16092,7 @@ components:
                         title: sic-code
                         type: string
                         x-konfig-original-example: "12345"
-                        x-konfig-generated-schema: konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-18-properties-sic-codes-items
+                        x-konfig-generated-schema: konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-19-properties-sic-codes-items
                       type: array
                     international-operations-countries:
                       items:
@@ -16700,7 +16745,7 @@ components:
           title: currency code
           type: string
           x-konfig-original-example: GBP
-          x-konfig-generated-schema: konfig-generated-schema-components-schemas-ClaimsCreateNewClaimRequest-anyOf-16-properties-annual-turnover-properties-currency
+          x-konfig-generated-schema: konfig-generated-schema-components-schemas-ClaimsCreateNewClaimRequest-anyOf-17-properties-annual-turnover-properties-currency
         value:
           default: "1.00"
           description: The unsigned value as a decimal-formatted string
@@ -16708,7 +16753,7 @@ components:
           title: value
           type: string
           x-konfig-original-example: "1000.00"
-          x-konfig-generated-schema: konfig-generated-schema-components-schemas-ClaimsCreateNewClaimRequest-anyOf-16-properties-annual-turnover-properties-value
+          x-konfig-generated-schema: konfig-generated-schema-components-schemas-ClaimsCreateNewClaimRequest-anyOf-17-properties-annual-turnover-properties-value
       required:
       - currency
       - value
@@ -16781,7 +16826,7 @@ components:
           title: currency code
           type: string
           x-konfig-original-example: GBP
-          x-konfig-generated-schema: konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-16-properties-annual-turnover-properties-currency
+          x-konfig-generated-schema: konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-17-properties-annual-turnover-properties-currency
         value:
           default: "1.00"
           description: The unsigned value as a decimal-formatted string
@@ -16789,7 +16834,7 @@ components:
           title: value
           type: string
           x-konfig-original-example: "1000.00"
-          x-konfig-generated-schema: konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-16-properties-annual-turnover-properties-value
+          x-konfig-generated-schema: konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-17-properties-annual-turnover-properties-value
       required:
       - currency
       - value
@@ -17066,7 +17111,7 @@ components:
             title: sic-code
             type: string
             x-konfig-original-example: "12345"
-            x-konfig-generated-schema: konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-18-properties-sic-codes-items
+            x-konfig-generated-schema: konfig-generated-schema-components-schemas-LegalPersonsCreateNewLegalPersonRequest-properties-claims-items-anyOf-19-properties-sic-codes-items
           type: array
         international-operations-countries:
           items:
@@ -17215,7 +17260,7 @@ components:
           title: currency code
           type: string
           x-konfig-original-example: GBP
-          x-konfig-generated-schema: konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-16-properties-annual-turnover-properties-currency
+          x-konfig-generated-schema: konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-17-properties-annual-turnover-properties-currency
         value:
           default: "1.00"
           description: The unsigned value as a decimal-formatted string
@@ -17223,7 +17268,7 @@ components:
           title: value
           type: string
           x-konfig-original-example: "1000.00"
-          x-konfig-generated-schema: konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-16-properties-annual-turnover-properties-value
+          x-konfig-generated-schema: konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-17-properties-annual-turnover-properties-value
       required:
       - currency
       - value
@@ -17500,7 +17545,7 @@ components:
             title: sic-code
             type: string
             x-konfig-original-example: "12345"
-            x-konfig-generated-schema: konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-18-properties-sic-codes-items
+            x-konfig-generated-schema: konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-subject-profile-properties-claims-items-anyOf-19-properties-sic-codes-items
           type: array
         international-operations-countries:
           items:
@@ -17781,8 +17826,6 @@ components:
           type: string
           x-konfig-original-example: https://api.company-information.service.gov.uk/company/00000001/appointments/AbcDEFGhI1JKLmnO2PQ3sTUv4WX
           x-konfig-generated-schema: konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-subject-association-properties-psc-properties-companies-house-url
-      required:
-      - ownership-percent
       title: psc
       type: object
     subject_association_Property:
@@ -17839,8 +17882,6 @@ components:
                 example: https://api.company-information.service.gov.uk/company/00000001/appointments/AbcDEFGhI1JKLmnO2PQ3sTUv4WX
                 x-konfig-original-example: https://api.company-information.service.gov.uk/company/00000001/appointments/AbcDEFGhI1JKLmnO2PQ3sTUv4WX
                 x-konfig-generated-schema: konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-subject-association-x-allOf-0-properties-psc-properties-companies-house-url
-            required:
-            - ownership-percent
           senior-manager:
             title: senior-manager
             type: object
@@ -17913,7 +17954,7 @@ components:
           title: currency code
           type: string
           x-konfig-original-example: GBP
-          x-konfig-generated-schema: konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-16-properties-annual-turnover-properties-currency
+          x-konfig-generated-schema: konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-17-properties-annual-turnover-properties-currency
         value:
           default: "1.00"
           description: The unsigned value as a decimal-formatted string
@@ -17921,7 +17962,7 @@ components:
           title: value
           type: string
           x-konfig-original-example: "1000.00"
-          x-konfig-generated-schema: konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-16-properties-annual-turnover-properties-value
+          x-konfig-generated-schema: konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-17-properties-annual-turnover-properties-value
       required:
       - currency
       - value
@@ -18198,7 +18239,7 @@ components:
             title: sic-code
             type: string
             x-konfig-original-example: "12345"
-            x-konfig-generated-schema: konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-18-properties-sic-codes-items
+            x-konfig-generated-schema: konfig-generated-schema-components-schemas-RelianceOnboardingCreateApplicationRequest-properties-related-profiles-items-properties-claims-items-anyOf-19-properties-sic-codes-items
           type: array
         international-operations-countries:
           items:
@@ -21178,7 +21219,7 @@ components:
           title: currency code
           type: string
           x-konfig-original-example: GBP
-          x-konfig-generated-schema: konfig-generated-schema-components-schemas-ClaimsGetAllClaimsResponse-properties-claims-items-anyOf-16-properties-annual-turnover-properties-currency
+          x-konfig-generated-schema: konfig-generated-schema-components-schemas-ClaimsGetAllClaimsResponse-properties-claims-items-anyOf-17-properties-annual-turnover-properties-currency
         value:
           default: "1.00"
           description: The unsigned value as a decimal-formatted string
@@ -21186,7 +21227,7 @@ components:
           title: value
           type: string
           x-konfig-original-example: "1000.00"
-          x-konfig-generated-schema: konfig-generated-schema-components-schemas-ClaimsGetAllClaimsResponse-properties-claims-items-anyOf-16-properties-annual-turnover-properties-value
+          x-konfig-generated-schema: konfig-generated-schema-components-schemas-ClaimsGetAllClaimsResponse-properties-claims-items-anyOf-17-properties-annual-turnover-properties-value
       required:
       - currency
       - value
@@ -21463,7 +21504,7 @@ components:
             title: sic-code
             type: string
             x-konfig-original-example: "12345"
-            x-konfig-generated-schema: konfig-generated-schema-components-schemas-ClaimsGetAllClaimsResponse-properties-claims-items-anyOf-18-properties-sic-codes-items
+            x-konfig-generated-schema: konfig-generated-schema-components-schemas-ClaimsGetAllClaimsResponse-properties-claims-items-anyOf-19-properties-sic-codes-items
           type: array
         international-operations-countries:
           items:
@@ -21612,7 +21653,7 @@ components:
           title: currency code
           type: string
           x-konfig-original-example: GBP
-          x-konfig-generated-schema: konfig-generated-schema-components-schemas-ClaimsCreateNewClaimResponse-anyOf-16-properties-annual-turnover-properties-currency
+          x-konfig-generated-schema: konfig-generated-schema-components-schemas-ClaimsCreateNewClaimResponse-anyOf-17-properties-annual-turnover-properties-currency
         value:
           default: "1.00"
           description: The unsigned value as a decimal-formatted string
@@ -21620,7 +21661,7 @@ components:
           title: value
           type: string
           x-konfig-original-example: "1000.00"
-          x-konfig-generated-schema: konfig-generated-schema-components-schemas-ClaimsCreateNewClaimResponse-anyOf-16-properties-annual-turnover-properties-value
+          x-konfig-generated-schema: konfig-generated-schema-components-schemas-ClaimsCreateNewClaimResponse-anyOf-17-properties-annual-turnover-properties-value
       required:
       - currency
       - value
@@ -24015,6 +24056,7 @@ components:
               - business-email-address
               - client-money-protection-scheme
               - individual-sources-of-funds
+              - nominal-person-with-significant-control
               - hmo-verification
               - business-address
               - employment

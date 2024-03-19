@@ -73,8 +73,8 @@ public class PscProperty {
    * The percentage ownership the legal person has of the corporation.
    * @return ownershipPercent
   **/
-  @javax.annotation.Nonnull
-  @ApiModelProperty(example = "12.34", required = true, value = "The percentage ownership the legal person has of the corporation.")
+  @javax.annotation.Nullable
+  @ApiModelProperty(example = "12.34", value = "The percentage ownership the legal person has of the corporation.")
 
   public String getOwnershipPercent() {
     return ownershipPercent;
@@ -216,7 +216,6 @@ public class PscProperty {
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
-    openapiRequiredFields.add("ownership-percent");
   }
 
  /**
@@ -231,14 +230,7 @@ public class PscProperty {
           throw new IllegalArgumentException(String.format("The required field(s) %s in PscProperty is not found in the empty JSON string", PscProperty.openapiRequiredFields.toString()));
         }
       }
-
-      // check to make sure all required properties/fields are present in the JSON string
-      for (String requiredField : PscProperty.openapiRequiredFields) {
-        if (jsonObj.get(requiredField) == null) {
-          throw new IllegalArgumentException(String.format("The required field `%s` is not found in the JSON string: %s", requiredField, jsonObj.toString()));
-        }
-      }
-      if (!jsonObj.get("ownership-percent").isJsonPrimitive()) {
+      if ((jsonObj.get("ownership-percent") != null && !jsonObj.get("ownership-percent").isJsonNull()) && !jsonObj.get("ownership-percent").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `ownership-percent` to be a primitive type in the JSON string but got `%s`", jsonObj.get("ownership-percent").toString()));
       }
       if ((jsonObj.get("companies-house-url") != null && !jsonObj.get("companies-house-url").isJsonNull()) && !jsonObj.get("companies-house-url").isJsonPrimitive()) {

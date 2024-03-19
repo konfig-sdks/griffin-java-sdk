@@ -51,6 +51,7 @@
 | BUSINESS_EMAIL_ADDRESS | &quot;business-email-address&quot; |
 | CLIENT_MONEY_PROTECTION_SCHEME | &quot;client-money-protection-scheme&quot; |
 | INDIVIDUAL_SOURCES_OF_FUNDS | &quot;individual-sources-of-funds&quot; |
+| NOMINAL_PERSON_WITH_SIGNIFICANT_CONTROL | &quot;nominal-person-with-significant-control&quot; |
 | HMO_VERIFICATION | &quot;hmo-verification&quot; |
 | BUSINESS_ADDRESS | &quot;business-address&quot; |
 | EMPLOYMENT | &quot;employment&quot; |

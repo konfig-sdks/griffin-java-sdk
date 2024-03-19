@@ -166,6 +166,8 @@ public class Workflow {
     
     INDIVIDUAL_SOURCES_OF_FUNDS("individual-sources-of-funds"),
     
+    NOMINAL_PERSON_WITH_SIGNIFICANT_CONTROL("nominal-person-with-significant-control"),
+    
     HMO_VERIFICATION("hmo-verification"),
     
     BUSINESS_ADDRESS("business-address"),
